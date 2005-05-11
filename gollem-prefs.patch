@@ -1,0 +1,11 @@
+--- ./config/prefs.php.dist~	2004-11-18 04:04:34.000000000 +0200
++++ ./config/prefs.php.dist	2005-05-11 19:45:23.995881028 +0300
+@@ -6,7 +6,7 @@
+  */
+ 
+ // Make sure that constants are defined.
+-require_once dirname(__FILE__) . '/../lib/Gollem.php';
++require_once GOLLEM_BASE . '/lib/Gollem.php';
+ 
+ $prefGroups['display'] = array(
+     'column' => _("User Interface"),
