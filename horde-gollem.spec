@@ -3,7 +3,8 @@
 %define	_rel	3
 
 %include	/usr/lib/rpm/macros.php
-Summary:	Gollem is the Horde File Manager
+Summary:	Gollem - the Horde File Manager
+Summary(pl):	Gollem - zarz±dca plików Horde
 Name:		gollem
 Version:	1.0
 Release:	%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
@@ -41,6 +42,17 @@ identify file types, associate icons, etc.
 The Horde Project writes web applications in PHP and releases them
 under the GNU General Public License. For more information (including
 help with Gollem) please visit <http://www.horde.org/>.
+
+%description -l pl
+Gollem to zarz±dca plików Horde dzia³aj±cy poprzez sterownik
+Horde_VFS. Aktualnie jest rozwijany, ale ca³a podstawowa
+funkcjonalno¶æ jest ju¿ dostêpna i dzia³a dobrze. U¿ywa szkieletu
+Horde MIME_Viewer do identyfikowania typów plików, wi±zania z nimi
+ikon itp.
+
+Projekt Horde tworzy aplikacje WWW w PHP i wydaje je na licencji GNU
+Genral Public License. Wiêcej informacji (w³±cznie z pomoc± dla
+Gollema) mo¿na znale¼æ na stronie <http://www.horde.org/>.
 
 %prep
 %setup -q -n %{name}
