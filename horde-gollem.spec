@@ -1,6 +1,6 @@
 
 %define	_snap	2005-05-11
-%define	_rel	2
+%define	_rel	3
 
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem is the Horde File Manager
@@ -44,7 +44,7 @@ help with Gollem) please visit <http://www.horde.org/>.
 
 %prep
 %setup -q -n %{name}
-#%patch0 -p1
+%patch0 -p1
 
 # considered harmful (horde/docs/SECURITY)
 rm -f test.php
