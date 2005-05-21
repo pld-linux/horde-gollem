@@ -1,6 +1,6 @@
 
-%define	_snap	2005-05-11
-%define	_rel	3
+%define	_snap	2005-05-21
+%define	_rel	1
 
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
@@ -11,12 +11,13 @@ Release:	%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
 License:	GPL
 Group:		Applications/WWW
 Source0:	http://ftp.horde.org/pub/snaps/%{_snap}/%{name}-HEAD-%{_snap}.tar.gz
-# NoSource0-md5:	2c0604379e6e21c98b3bc323353fd4f8
+# NoSource0-md5:	4000c72ee291dcca8c55e821766d59fa
 # don't put snapshots to df
 NoSource:	0
 Source1:	%{name}.conf
 Patch0:		%{name}-prefs.patch
 URL:		http://www.horde.org/gollem/
+BuildRequires:	tar >= 1:1.15.1
 Requires:	apache >= 1.3.33-2
 Requires:	apache(mod_access)
 Requires:	horde >= 3.0
@@ -55,7 +56,8 @@ Genral Public License. Wiêcej informacji (w³±cznie z pomoc± dla
 Gollema) mo¿na znale¼æ na stronie <http://www.horde.org/>.
 
 %prep
-%setup -q -n %{name}
+%setup -q -c -T -n %{name}-%{_snap}
+tar zxf %{SOURCE0} --strip-components=1
 %patch0 -p1
 
 # considered harmful (horde/docs/SECURITY)
