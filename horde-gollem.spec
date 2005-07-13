@@ -1,5 +1,5 @@
 
-%define	_snap	2005-05-21
+%define	_beta	rc1
 %define	_rel	1
 
 %include	/usr/lib/rpm/macros.php
@@ -7,13 +7,11 @@ Summary:	Gollem - the Horde File Manager
 Summary(pl):	Gollem - zarz±dca plików Horde
 Name:		gollem
 Version:	1.0
-Release:	%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
+Release:	0.%{_beta}.1
 License:	GPL
 Group:		Applications/WWW
-Source0:	http://ftp.horde.org/pub/snaps/%{_snap}/%{name}-HEAD-%{_snap}.tar.gz
-# NoSource0-md5:	4000c72ee291dcca8c55e821766d59fa
-# don't put snapshots to df
-NoSource:	0
+Source0:	http://ftp.horde.org/pub/gollem/%{name}-%{version}-%{_beta}.tar.gz
+# Source0-md5:	a60aa2a22ab33ef118beafa57cb1b927
 Source1:	%{name}.conf
 Patch0:		%{name}-prefs.patch
 URL:		http://www.horde.org/gollem/
@@ -56,7 +54,7 @@ Genral Public License. Wiêcej informacji (w³±cznie z pomoc± dla
 Gollema) mo¿na znale¼æ na stronie <http://www.horde.org/>.
 
 %prep
-%setup -q -c -T -n %{name}-%{_snap}
+%setup -q -n %{name}-%{version}-%{_beta}
 tar zxf %{SOURCE0} --strip-components=1
 %patch0 -p1
 
