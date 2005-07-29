@@ -1,5 +1,5 @@
 
-%define	_beta	rc1
+%define	_beta	rc2
 %define	_rel	1
 
 %include	/usr/lib/rpm/macros.php
@@ -11,7 +11,7 @@ Release:	0.%{_beta}.1
 License:	GPL
 Group:		Applications/WWW
 Source0:	http://ftp.horde.org/pub/gollem/%{name}-%{version}-%{_beta}.tar.gz
-# Source0-md5:	a60aa2a22ab33ef118beafa57cb1b927
+# Source0-md5:	c5270fd6603ddf21682e7dcbb41b195c
 Source1:	%{name}.conf
 Patch0:		%{name}-prefs.patch
 URL:		http://www.horde.org/gollem/
