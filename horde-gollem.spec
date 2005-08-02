@@ -49,7 +49,7 @@ Horde MIME_Viewer do identyfikowania typów plików, wi±zania z nimi
 ikon itp.
 
 Projekt Horde tworzy aplikacje WWW w PHP i wydaje je na licencji GNU
-Genral Public License. Wiêcej informacji (w³±cznie z pomoc± dla
+General Public License. Wiêcej informacji (w³±cznie z pomoc± dla
 Gollema) mo¿na znale¼æ na stronie <http://www.horde.org/>.
 
 %prep
