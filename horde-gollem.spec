@@ -1,17 +1,14 @@
 
-%define	_rc		rc2
-%define	_rel	1
-
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
 Summary(pl):	Gollem - zarz±dca plików Horde
 Name:		gollem
 Version:	1.0
-Release:	0.%{_rc}.%{_rel}
+Release:	0.1
 License:	GPL
 Group:		Applications/WWW
-Source0:	http://ftp.horde.org/pub/gollem/%{name}-%{version}-%{_rc}.tar.gz
-# Source0-md5:	c5270fd6603ddf21682e7dcbb41b195c
+Source0:	ftp://ftp.horde.org/pub/gollem/%{name}-h3-%{version}.tar.gz
+# Source0-md5:	29f668de08c0672169cbe52a80dc1771
 Source1:	%{name}.conf
 Patch0:		%{name}-prefs.patch
 URL:		http://www.horde.org/gollem/
@@ -53,7 +50,7 @@ General Public License. Wiêcej informacji (w³±cznie z pomoc± dla
 Gollema) mo¿na znale¼æ na stronie <http://www.horde.org/>.
 
 %prep
-%setup -q -n %{name}-%{version}-%{_rc}
+%setup -q -n %{name}-h3-%{version}
 tar zxf %{SOURCE0} --strip-components=1
 %patch0 -p1
 
