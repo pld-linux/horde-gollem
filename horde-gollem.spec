@@ -4,7 +4,7 @@ Summary:	Gollem - the Horde File Manager
 Summary(pl):	Gollem - zarz±dca plików Horde
 Name:		gollem
 Version:	1.0
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/WWW
 Source0:	ftp://ftp.horde.org/pub/gollem/%{name}-h3-%{version}.tar.gz
