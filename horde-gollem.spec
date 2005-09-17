@@ -1,12 +1,12 @@
 %define		_hordeapp	gollem
 #define	_snap	-
 #define	_rc		-
-%define	_rel	1.1
+%define	_rel	0.1
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
 Summary(pl):	Gollem - zarz±dca plików Horde
-Name:		%{_hordeapp}
+Name:		horde-%{_hordeapp}
 Version:	1.0
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
 License:	GPL
@@ -22,6 +22,7 @@ BuildRequires:	tar >= 1:1.15.1
 Requires:	apache >= 1.3.33-2
 Requires:	apache(mod_access)
 Requires:	horde >= 3.0
+Obsoletes:	%{_hordeapp}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
