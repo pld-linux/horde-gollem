@@ -1,7 +1,7 @@
-%define		_hordeapp	gollem
+%define	_hordeapp	gollem
 #define	_snap	-
 #define	_rc		-
-%define	_rel	0.1
+%define	_rel	2
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
