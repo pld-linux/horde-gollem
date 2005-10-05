@@ -9,3 +9,13 @@
  
  $prefGroups['display'] = array(
      'column' => _("User Interface"),
+--- ./config/prefs.php.dist~	2005-10-05 16:52:20.000000000 +0300
++++ ./config/prefs.php.dist	2005-10-05 16:52:38.000000000 +0300
+@@ -6,6 +6,7 @@
+  */
+ 
+ // Make sure that constants are defined.
++@define('GOLLEM_BASE', '/usr/share/horde/gollem');
+ require_once GOLLEM_BASE . '/lib/Gollem.php';
+ 
+ $prefGroups['display'] = array(
