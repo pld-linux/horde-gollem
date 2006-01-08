@@ -105,7 +105,7 @@ fi
 %triggerun -- apache >= 2.0.0
 %webapp_unregister httpd %{_webapp}
 
-%triggerpostun -- horde-%{_hordeapp} < 1.0-2.3, %{_hordeapp} < 1.0-2.3
+%triggerpostun -- horde-%{_hordeapp} < 1.0-2.3, %{_hordeapp}
 for i in apache.conf backends.php conf.php credentials.php httpd.conf menu.php mime_drivers.php motd.php prefs.php; do
 	if [ -f /etc/horde.org/%{_hordeapp}/$i.rpmsave ]; then
 		mv -f %{_sysconfdir}/$i{,.rpmnew}
