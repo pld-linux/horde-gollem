@@ -1,7 +1,7 @@
 %define	_hordeapp	gollem
 #define	_snap	-
-%define	_rc		rc1
-%define	_rel	1.1
+%define	_rc		rc2
+%define	_rel	1
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
@@ -13,7 +13,7 @@ License:	GPL
 Group:		Applications/WWW
 #Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}.tar.gz
 Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}-%{_rc}.tar.gz
-# Source0-md5:	1f2cc20aca427ce444d2409dfc7d4c21
+# Source0-md5:	03aa5571a83bfef83ce6697bd4623234
 Source1:	%{_hordeapp}.conf
 Patch0:		%{_hordeapp}-prefs.patch
 URL:		http://www.horde.org/gollem/
