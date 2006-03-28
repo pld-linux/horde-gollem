@@ -1,6 +1,6 @@
 %define	_hordeapp	gollem
 #define	_snap	-
-%define	_rc		rc2
+#define	_rc		rc2
 %define	_rel	1
 #
 %include	/usr/lib/rpm/macros.php
@@ -11,9 +11,9 @@ Version:	1.0.2
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
 License:	GPL
 Group:		Applications/WWW
-#Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}.tar.gz
-Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}-%{_rc}.tar.gz
-# Source0-md5:	03aa5571a83bfef83ce6697bd4623234
+Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}.tar.gz
+# Source0-md5:	3d4f4e537b39a73acf3d16a7eeed2d65
+#Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}-%{_rc}.tar.gz
 Source1:	%{_hordeapp}.conf
 Patch0:		%{_hordeapp}-prefs.patch
 URL:		http://www.horde.org/gollem/
