@@ -62,12 +62,12 @@ Gollema) mo¿na znale¼æ na stronie <http://www.horde.org/>.
 tar zxf %{SOURCE0} --strip-components=1
 %patch0 -p1
 
-rm -f {,*/}.htaccess
+rm {,*/}.htaccess
 for i in config/*.dist; do
 	mv $i config/$(basename $i .dist)
 done
 # considered harmful (horde/docs/SECURITY)
-rm -f test.php
+rm test.php
 
 %install
 rm -rf $RPM_BUILD_ROOT
