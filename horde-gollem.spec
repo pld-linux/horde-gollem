@@ -5,7 +5,7 @@
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
-Summary(pl):	Gollem - zarz±dca plików Horde
+Summary(pl.UTF-8):   Gollem - zarzÄ…dca plikÃ³w Horde
 Name:		horde-%{_hordeapp}
 Version:	1.0.2
 Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{_rel}
@@ -46,16 +46,16 @@ The Horde Project writes web applications in PHP and releases them
 under the GNU General Public License. For more information (including
 help with Gollem) please visit <http://www.horde.org/>.
 
-%description -l pl
-Gollem to zarz±dca plików Horde dzia³aj±cy poprzez sterownik
-Horde_VFS. Aktualnie jest rozwijany, ale ca³a podstawowa
-funkcjonalno¶æ jest ju¿ dostêpna i dzia³a dobrze. U¿ywa szkieletu
-Horde MIME_Viewer do identyfikowania typów plików, wi±zania z nimi
+%description -l pl.UTF-8
+Gollem to zarzÄ…dca plikÃ³w Horde dziaÅ‚ajÄ…cy poprzez sterownik
+Horde_VFS. Aktualnie jest rozwijany, ale caÅ‚a podstawowa
+funkcjonalnoÅ›Ä‡ jest juÅ¼ dostÄ™pna i dziaÅ‚a dobrze. UÅ¼ywa szkieletu
+Horde MIME_Viewer do identyfikowania typÃ³w plikÃ³w, wiÄ…zania z nimi
 ikon itp.
 
 Projekt Horde tworzy aplikacje WWW w PHP i wydaje je na licencji GNU
-General Public License. Wiêcej informacji (w³±cznie z pomoc± dla
-Gollema) mo¿na znale¼æ na stronie <http://www.horde.org/>.
+General Public License. WiÄ™cej informacji (wÅ‚Ä…cznie z pomocÄ… dla
+Gollema) moÅ¼na znaleÅºÄ‡ na stronie <http://www.horde.org/>.
 
 %prep
 %setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
