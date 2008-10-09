@@ -1,19 +1,15 @@
 %define	_hordeapp	gollem
-#define	_snap	-
-#define	_rc		rc2
-%define	rel	4
 #
 %include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
 Summary(pl.UTF-8):	Gollem - zarządca plików Horde
 Name:		horde-%{_hordeapp}
-Version:	1.0.3
-Release:	%{?_rc:0.%{_rc}.}%{?_snap:0.%(echo %{_snap} | tr -d -).}%{rel}
+Version:	1.0.4
+Release:	0.1
 License:	GPL
 Group:		Applications/WWW
 Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}.tar.gz
-# Source0-md5:	a61b5932cafd7ad99b1fa9994e2c7ec5
-#Source0:	ftp://ftp.horde.org/pub/gollem/%{_hordeapp}-h3-%{version}-%{_rc}.tar.gz
+# Source0-md5:	44b51fc073f8ddbad4bfdc275223776a
 Source1:	%{_hordeapp}.conf
 Patch0:		%{_hordeapp}-prefs.patch
 URL:		http://www.horde.org/gollem/
@@ -58,8 +54,7 @@ General Public License. Więcej informacji (włącznie z pomocą dla
 Gollema) można znaleźć na stronie <http://www.horde.org/>.
 
 %prep
-%setup -qcT -n %{?_snap:%{_hordeapp}-%{_snap}}%{!?_snap:%{_hordeapp}-%{version}%{?_rc:-%{_rc}}}
-tar zxf %{SOURCE0} --strip-components=1
+%setup -q
 %patch0 -p1
 
 for i in config/*.dist; do
