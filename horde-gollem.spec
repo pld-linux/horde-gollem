@@ -52,7 +52,7 @@ General Public License. Więcej informacji (włącznie z pomocą dla
 Gollema) można znaleźć na stronie <http://www.horde.org/>.
 
 %prep
-%setup -q
+%setup -q -n %{_hordeapp}-h3-%{version}
 %patch0 -p1
 
 for i in config/*.dist; do
