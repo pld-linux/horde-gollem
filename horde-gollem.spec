@@ -1,6 +1,5 @@
 %define	_hordeapp	gollem
 #
-%include	/usr/lib/rpm/macros.php
 Summary:	Gollem - the Horde File Manager
 Summary(pl.UTF-8):	Gollem - zarządca plików Horde
 Name:		horde-%{_hordeapp}
