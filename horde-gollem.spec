@@ -54,7 +54,7 @@ Gollema) można znaleźć na stronie <http://www.horde.org/>.
 
 %prep
 %setup -q -n %{_hordeapp}-h3-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 for i in config/*.dist; do
 	mv $i config/$(basename $i .dist)
